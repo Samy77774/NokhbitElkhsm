@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+         setApperance()
         return true
     }
 
@@ -43,4 +44,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+///Mark:- Apperance
+extension AppDelegate {
+    fileprivate func setApperance (){
+        if AppLanguage.currentLanguage().contains("en") {
+            UIView.appearance().semanticContentAttribute = .forceLeftToRight
+        } else if AppLanguage.currentLanguage().contains("ar") {
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+        }
+        // Custom Navigation Bar Item
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.06301385909, green: 0.05123060942, blue: 0.05094624311, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white, NSAttributedString.Key.font: CairoFont.regular.with(size: 20)]
+        
+        // Custom Tab Bar Item
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : CairoFont.semiBold.with(size: 35)], for: .normal)
+        UITabBar.appearance().barTintColor = UIColor.black
+    }
+    fileprivate func handleLogin() {
+        let token = UserDefaults.standard.string(forKey: "token")
+        let userId = UserDefaults.standard.string(forKey: "userId")
+        if token != nil && userId != nil {
+            window?.makeKeyAndVisible()
+            //window?.rootViewController = Storyboard.Home.instantiate(TabBarViewController.self)
+            
+        }
+    }
+}
+
 
