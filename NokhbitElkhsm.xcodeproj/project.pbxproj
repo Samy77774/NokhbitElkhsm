@@ -109,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				D9DCBC0121EBCA6400D3CC2D /* AppDelegate.swift */,
-				D9DCBC8021EBED3900D3CC2D /* Localization */,
 				D9DCBC0021EBCA6400D3CC2D /* NokhbitElkhsm */,
 				D9DCBBFF21EBCA6400D3CC2D /* Products */,
 				69D6DA12939DA04E321A4DB1 /* Pods */,
@@ -128,6 +127,7 @@
 		D9DCBC0021EBCA6400D3CC2D /* NokhbitElkhsm */ = {
 			isa = PBXGroup;
 			children = (
+				D9DCBC8021EBED3900D3CC2D /* Localization */,
 				D9DCBC2421EBE3C000D3CC2D /* API */,
 				D9DCBC2321EBE3BD00D3CC2D /* Utilities */,
 				D9DCBC2221EBE3B900D3CC2D /* Extensions */,

@@ -8,7 +8,6 @@
 import UIKit
 
 public enum Storyboard: String {
-    case Intro
     case Authentication
     case Home
     
