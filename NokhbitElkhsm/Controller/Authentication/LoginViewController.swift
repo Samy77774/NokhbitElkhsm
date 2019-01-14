@@ -16,13 +16,13 @@ class LoginViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)    }
     
     @IBAction func Skip(_ sender: Any) {
-        self.presentDetails(viewControllerToPresent: Storyboard.Home.instantiate(HomeViewController.self))
-        
-        
+        let sb = UIStoryboard(name: "Home", bundle: nil)
+        let vc = sb.instantiateInitialViewController()
+        self.presentDetails(viewControllerToPresent: (vc)!)
     }
     
     @IBAction func SkipRegister(_ sender: Any) {
-        self.navigationController?.pushViewController(Storyboard.Authentication.instantiate(RegisterViewController.self), animated: true)
+self.navigationController?.pushViewController(Storyboard.Authentication.instantiate(RegisterViewController.self), animated: true)
     }
     
     
