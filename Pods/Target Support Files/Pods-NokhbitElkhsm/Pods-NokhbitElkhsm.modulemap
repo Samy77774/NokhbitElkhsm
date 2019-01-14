@@ -1,6 +1,0 @@
-framework module Pods_NokhbitElkhsm {
-  umbrella header "Pods-NokhbitElkhsm-umbrella.h"
-
-  export *
-  module * { export * }
-}
