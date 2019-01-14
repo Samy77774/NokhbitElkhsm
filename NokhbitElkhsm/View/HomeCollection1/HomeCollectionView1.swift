@@ -15,7 +15,7 @@ class HomeCollectionView1: UICollectionViewCell {
         // Initialization code
     }
     func updateViews(offer : Offer){
-        Collection1Image.image = UIImage(named: offer.Collection1Image)
+        Collection1Image.image = UIImage(named: offer.ImageName)
     }
 
 }

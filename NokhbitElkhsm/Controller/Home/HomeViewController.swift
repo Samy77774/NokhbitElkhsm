@@ -14,11 +14,15 @@ class HomeViewController: UIViewController {
     let types1 = [(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") )]
     let types2 = [(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") )]
     
-     var offers = [Offer]()
-    var offrs = [Offer1]()
+     private (set) public var offers = [Offer]()
+   private (set) public var offrs = [Offer1]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        HomeCollection1.delegate = self
+        HomeCollection1.dataSource = self
+        HomeCollection2.delegate = self
+        HomeCollection2.dataSource = self
         
  HomeCollection1.register(UINib(nibName: "HomeCollectionView1", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionView1")
         
@@ -41,11 +45,13 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         switch collectionView.tag {
         case 0:
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionView1", for: indexPath) as? HomeCollectionView1 else { return UICollectionViewCell() }
-        cell.updateViews(offer: offers[indexPath.item])
+       cell.Collection1Image.image = types1[indexPath.item]
+        // cell.updateViews(offer: offers[indexPath.item])
         return cell
         case 1:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionView2", for: indexPath) as? HomeCollectionView2 else { return UICollectionViewCell() }
-            cell.updateViews(offer1: offrs[indexPath.item])
+            cell.Collection2Image.image = types2[indexPath.item]
+           // cell.updateViews(offer1: offrs[indexPath.item])
             return cell
         default:
             return UICollectionViewCell()
