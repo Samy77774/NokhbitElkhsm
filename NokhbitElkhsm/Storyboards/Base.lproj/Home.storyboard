@@ -137,6 +137,70 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="xKZ-Tf-Ncg"/>
                                                 </connections>
                                             </collectionView>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dnS-zA-cAg">
+                                                <rect key="frame" x="0.0" y="455" width="375" height="199"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="199" id="Mnv-Sq-Kbs"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DBf-oX-Vrc">
+                                                    <size key="itemSize" width="174" height="190"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionView3" id="ioo-Qg-BUL" customClass="HomeCollectionView3" customModule="NokhbitElkhsm" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="174" height="190"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="174" height="190"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </view>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="UDC-T9-tvE"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FgU-Z3-bov"/>
+                                                </connections>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="عروض مميزة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJH-Ky-Xhh">
+                                                <rect key="frame" x="256" y="674" width="111" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZEe-wP-C8i">
+                                                <rect key="frame" x="8" y="687" width="255" height="2"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.69033950567245483" green="0.68253630399703979" blue="0.68225717544555664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="auE-ID-R55">
+                                                <rect key="frame" x="0.0" y="703" width="375" height="179"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QrZ-gh-eRH">
+                                                    <size key="itemSize" width="182" height="169"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionView4" id="C1N-vF-Zc5" customClass="HomeCollectionView4" customModule="NokhbitElkhsm" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="169"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="182" height="169"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </view>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dyC-66-hCF"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yEP-me-HSq"/>
+                                                </connections>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -149,10 +213,13 @@
                                             <constraint firstAttribute="trailing" secondItem="bkM-Hg-vMe" secondAttribute="trailing" id="BjO-I6-UU8"/>
                                             <constraint firstItem="Rkn-9R-8N8" firstAttribute="leading" secondItem="NfQ-2B-zE3" secondAttribute="leading" id="CUv-oy-SO1"/>
                                             <constraint firstItem="bkM-Hg-vMe" firstAttribute="top" secondItem="Rkn-9R-8N8" secondAttribute="bottom" constant="8" id="NTW-FE-T3A"/>
+                                            <constraint firstItem="dnS-zA-cAg" firstAttribute="top" secondItem="ush-66-LYL" secondAttribute="bottom" constant="8" id="SKA-3Q-fvc"/>
                                             <constraint firstItem="NcH-JT-FdX" firstAttribute="leading" secondItem="NfQ-2B-zE3" secondAttribute="leading" id="V8J-ci-auV"/>
                                             <constraint firstAttribute="trailing" secondItem="4x6-R9-QMh" secondAttribute="trailing" id="WpO-BV-Taf"/>
                                             <constraint firstAttribute="trailing" secondItem="NcH-JT-FdX" secondAttribute="trailing" id="Xl0-3S-6ez"/>
                                             <constraint firstAttribute="bottom" secondItem="NcH-JT-FdX" secondAttribute="bottom" id="fbN-Wa-Zf0"/>
+                                            <constraint firstItem="dnS-zA-cAg" firstAttribute="leading" secondItem="NfQ-2B-zE3" secondAttribute="leading" id="hpw-ZI-i2o"/>
+                                            <constraint firstAttribute="trailing" secondItem="dnS-zA-cAg" secondAttribute="trailing" id="nPk-sI-oUY"/>
                                             <constraint firstItem="ush-66-LYL" firstAttribute="leading" secondItem="NfQ-2B-zE3" secondAttribute="leading" id="vYt-rR-2VA"/>
                                             <constraint firstItem="ush-66-LYL" firstAttribute="top" secondItem="bkM-Hg-vMe" secondAttribute="bottom" constant="8" id="w2x-NZ-56t"/>
                                             <constraint firstItem="4x6-R9-QMh" firstAttribute="top" secondItem="NfQ-2B-zE3" secondAttribute="top" id="wq4-S0-GiA"/>
@@ -183,6 +250,8 @@
                     <connections>
                         <outlet property="HomeCollection1" destination="Rkn-9R-8N8" id="XeR-n0-vLU"/>
                         <outlet property="HomeCollection2" destination="ush-66-LYL" id="g1N-al-Ben"/>
+                        <outlet property="HomeCollection3" destination="dnS-zA-cAg" id="hz2-zp-OLO"/>
+                        <outlet property="HomeCollection4" destination="auE-ID-R55" id="TNR-7V-8ON"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -14,8 +14,8 @@ class HomeCollectionView1: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func updateViews(offer : Offer){
-        Collection1Image.image = UIImage(named: offer.ImageName)
+    func updateViews(offer1 : Offer1){
+        Collection1Image.image = UIImage(named: offer1.ImageName)
     }
 
 }

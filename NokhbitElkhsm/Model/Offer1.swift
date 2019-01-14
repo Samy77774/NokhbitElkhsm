@@ -1,5 +1,5 @@
 //
-//  Offer1.swift
+//  Offer.swift
 //  NokhbitElkhsm
 //
 //  Created by SAMY on 1/14/19.
@@ -7,10 +7,11 @@
 //
 
 import Foundation
+
 struct Offer1 {
-    private (set) public var Collection2Image : String
-    init(Collection2Image : String) {
-        self.Collection2Image = Collection2Image
-        
-    }
+private (set) public var ImageName : String
+init(ImageName : String) {
+    self.ImageName = ImageName
+
+}
 }

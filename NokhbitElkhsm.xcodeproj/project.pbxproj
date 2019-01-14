@@ -10,10 +10,16 @@
 		7967D0C6D40EE294785400B3 /* Pods_NokhbitElkhsm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D75DD34ECCB0E725941CEB7 /* Pods_NokhbitElkhsm.framework */; };
 		D900EF0921ECB0B100FA6E99 /* HomeCollectionView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF0721ECB0B100FA6E99 /* HomeCollectionView1.swift */; };
 		D900EF0A21ECB0B100FA6E99 /* HomeCollectionView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = D900EF0821ECB0B100FA6E99 /* HomeCollectionView1.xib */; };
-		D900EF0C21ECB5ED00FA6E99 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF0B21ECB5ED00FA6E99 /* Offer.swift */; };
+		D900EF0C21ECB5ED00FA6E99 /* Offer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF0B21ECB5ED00FA6E99 /* Offer1.swift */; };
 		D900EF1121ECC87900FA6E99 /* HomeCollectionView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF0F21ECC87900FA6E99 /* HomeCollectionView2.swift */; };
 		D900EF1221ECC87900FA6E99 /* HomeCollectionView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D900EF1021ECC87900FA6E99 /* HomeCollectionView2.xib */; };
-		D900EF1421ECCDB500FA6E99 /* Offer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF1321ECCDB500FA6E99 /* Offer1.swift */; };
+		D900EF1421ECCDB500FA6E99 /* Offer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF1321ECCDB500FA6E99 /* Offer2.swift */; };
+		D900EF1A21ECFB1200FA6E99 /* HomeCollectionView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF1821ECFB1200FA6E99 /* HomeCollectionView3.swift */; };
+		D900EF1B21ECFB1200FA6E99 /* HomeCollectionView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = D900EF1921ECFB1200FA6E99 /* HomeCollectionView3.xib */; };
+		D900EF1E21ECFB3900FA6E99 /* HomeCollectionView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF1C21ECFB3900FA6E99 /* HomeCollectionView4.swift */; };
+		D900EF1F21ECFB3900FA6E99 /* HomeCollectionView4.xib in Resources */ = {isa = PBXBuildFile; fileRef = D900EF1D21ECFB3900FA6E99 /* HomeCollectionView4.xib */; };
+		D900EF2121ECFB6500FA6E99 /* Offer3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF2021ECFB6500FA6E99 /* Offer3.swift */; };
+		D900EF2321ECFB7D00FA6E99 /* Offer4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF2221ECFB7D00FA6E99 /* Offer4.swift */; };
 		D9DCBC0221EBCA6400D3CC2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCBC0121EBCA6400D3CC2D /* AppDelegate.swift */; };
 		D9DCBC0721EBCA6400D3CC2D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DCBC0521EBCA6400D3CC2D /* Home.storyboard */; };
 		D9DCBC0921EBCA6800D3CC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9DCBC0821EBCA6800D3CC2D /* Assets.xcassets */; };
@@ -51,10 +57,16 @@
 		96CD269E91042E48DC67D1A3 /* Pods-NokhbitElkhsm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokhbitElkhsm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm.debug.xcconfig"; sourceTree = "<group>"; };
 		D900EF0721ECB0B100FA6E99 /* HomeCollectionView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView1.swift; sourceTree = "<group>"; };
 		D900EF0821ECB0B100FA6E99 /* HomeCollectionView1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionView1.xib; sourceTree = "<group>"; };
-		D900EF0B21ECB5ED00FA6E99 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		D900EF0B21ECB5ED00FA6E99 /* Offer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer1.swift; sourceTree = "<group>"; };
 		D900EF0F21ECC87900FA6E99 /* HomeCollectionView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView2.swift; sourceTree = "<group>"; };
 		D900EF1021ECC87900FA6E99 /* HomeCollectionView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionView2.xib; sourceTree = "<group>"; };
-		D900EF1321ECCDB500FA6E99 /* Offer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer1.swift; sourceTree = "<group>"; };
+		D900EF1321ECCDB500FA6E99 /* Offer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer2.swift; sourceTree = "<group>"; };
+		D900EF1821ECFB1200FA6E99 /* HomeCollectionView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView3.swift; sourceTree = "<group>"; };
+		D900EF1921ECFB1200FA6E99 /* HomeCollectionView3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionView3.xib; sourceTree = "<group>"; };
+		D900EF1C21ECFB3900FA6E99 /* HomeCollectionView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView4.swift; sourceTree = "<group>"; };
+		D900EF1D21ECFB3900FA6E99 /* HomeCollectionView4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionView4.xib; sourceTree = "<group>"; };
+		D900EF2021ECFB6500FA6E99 /* Offer3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer3.swift; sourceTree = "<group>"; };
+		D900EF2221ECFB7D00FA6E99 /* Offer4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer4.swift; sourceTree = "<group>"; };
 		D9DCBBFE21EBCA6400D3CC2D /* NokhbitElkhsm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NokhbitElkhsm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DCBC0121EBCA6400D3CC2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DCBC0621EBCA6400D3CC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -135,6 +147,24 @@
 			path = Homeollection2;
 			sourceTree = "<group>";
 		};
+		D900EF1521ECFA0A00FA6E99 /* HomeCollection3 */ = {
+			isa = PBXGroup;
+			children = (
+				D900EF1821ECFB1200FA6E99 /* HomeCollectionView3.swift */,
+				D900EF1921ECFB1200FA6E99 /* HomeCollectionView3.xib */,
+			);
+			path = HomeCollection3;
+			sourceTree = "<group>";
+		};
+		D900EF1621ECFA3700FA6E99 /* HomeCollection4 */ = {
+			isa = PBXGroup;
+			children = (
+				D900EF1C21ECFB3900FA6E99 /* HomeCollectionView4.swift */,
+				D900EF1D21ECFB3900FA6E99 /* HomeCollectionView4.xib */,
+			);
+			path = HomeCollection4;
+			sourceTree = "<group>";
+		};
 		D9DCBBF521EBCA6400D3CC2D = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +234,8 @@
 			children = (
 				D900EF0D21ECC7FA00FA6E99 /* HomeCollection1 */,
 				D900EF0E21ECC82A00FA6E99 /* Homeollection2 */,
+				D900EF1521ECFA0A00FA6E99 /* HomeCollection3 */,
+				D900EF1621ECFA3700FA6E99 /* HomeCollection4 */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,8 +243,10 @@
 		D9DCBC2121EBE3B400D3CC2D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D900EF0B21ECB5ED00FA6E99 /* Offer.swift */,
-				D900EF1321ECCDB500FA6E99 /* Offer1.swift */,
+				D900EF0B21ECB5ED00FA6E99 /* Offer1.swift */,
+				D900EF1321ECCDB500FA6E99 /* Offer2.swift */,
+				D900EF2021ECFB6500FA6E99 /* Offer3.swift */,
+				D900EF2221ECFB7D00FA6E99 /* Offer4.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,12 +402,14 @@
 			files = (
 				D9DCBC7921EBEBA900D3CC2D /* Cairo-ExtraLight.ttf in Resources */,
 				D9DCBC0C21EBCA6800D3CC2D /* LaunchScreen.storyboard in Resources */,
+				D900EF1F21ECFB3900FA6E99 /* HomeCollectionView4.xib in Resources */,
 				D9DCBC7E21EBEBA900D3CC2D /* Cairo-Bold.ttf in Resources */,
 				D9DCBC7C21EBEBA900D3CC2D /* Cairo-Light.ttf in Resources */,
 				D9DCBC8721EBEED000D3CC2D /* Authentication.storyboard in Resources */,
 				D9DCBC7D21EBEBA900D3CC2D /* Cairo-Black.ttf in Resources */,
 				D9DCBC0921EBCA6800D3CC2D /* Assets.xcassets in Resources */,
 				D9DCBC7B21EBEBA900D3CC2D /* Cairo-Regular.ttf in Resources */,
+				D900EF1B21ECFB1200FA6E99 /* HomeCollectionView3.xib in Resources */,
 				D9DCBC7A21EBEBA900D3CC2D /* Cairo-SemiBold.ttf in Resources */,
 				D900EF0A21ECB0B100FA6E99 /* HomeCollectionView1.xib in Resources */,
 				D900EF1221ECC87900FA6E99 /* HomeCollectionView2.xib in Resources */,
@@ -445,12 +481,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D900EF0C21ECB5ED00FA6E99 /* Offer.swift in Sources */,
+				D900EF0C21ECB5ED00FA6E99 /* Offer1.swift in Sources */,
 				D9DCBC2E21EBE68800D3CC2D /* ShowMessage.swift in Sources */,
 				D9DCBC3421EBE72D00D3CC2D /* UIViewControllerExtension.swift in Sources */,
 				D9DCBC7F21EBEBA900D3CC2D /* AppFont.swift in Sources */,
 				D9DCBC4221EBE93000D3CC2D /* LoginViewController.swift in Sources */,
 				D9DCBC0221EBCA6400D3CC2D /* AppDelegate.swift in Sources */,
+				D900EF2321ECFB7D00FA6E99 /* Offer4.swift in Sources */,
 				D900EF0921ECB0B100FA6E99 /* HomeCollectionView1.swift in Sources */,
 				D9DCBC2C21EBE65200D3CC2D /* PopViewController.swift in Sources */,
 				D9DCBC4021EBE90200D3CC2D /* HomeViewController.swift in Sources */,
@@ -460,14 +497,17 @@
 				D9DCBC4621EBE97800D3CC2D /* ForgetPasswordViewController.swift in Sources */,
 				D9DCBC2821EBE59E00D3CC2D /* API.swift in Sources */,
 				D9DCBC8421EBEDB000D3CC2D /* Localizer.swift in Sources */,
+				D900EF2121ECFB6500FA6E99 /* Offer3.swift in Sources */,
 				D9DCBC3A21EBE7C200D3CC2D /* UISearchBar+Extension.swift in Sources */,
+				D900EF1E21ECFB3900FA6E99 /* HomeCollectionView4.swift in Sources */,
 				D900EF1121ECC87900FA6E99 /* HomeCollectionView2.swift in Sources */,
 				D9DCBC4421EBE95600D3CC2D /* RegisterViewController.swift in Sources */,
-				D900EF1421ECCDB500FA6E99 /* Offer1.swift in Sources */,
+				D900EF1421ECCDB500FA6E99 /* Offer2.swift in Sources */,
 				D9DCBC2A21EBE61700D3CC2D /* Alert.swift in Sources */,
 				D9DCBC3621EBE76400D3CC2D /* StringExtension.swift in Sources */,
 				D9DCBC2621EBE52700D3CC2D /* Config.swift in Sources */,
 				D9DCBC3821EBE79900D3CC2D /* UIImageExtension.swift in Sources */,
+				D900EF1A21ECFB1200FA6E99 /* HomeCollectionView3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
