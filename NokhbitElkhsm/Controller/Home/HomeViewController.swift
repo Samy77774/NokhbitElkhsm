@@ -72,6 +72,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         case 2:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionView3", for: indexPath) as? HomeCollectionView3 else { return UICollectionViewCell() }
             cell.Collection3Image.image = types3[indexPath.item].0
+            cell.DescripImage.text = types3[indexPath.item].1
            // cell.updateViews(offer2: offrs[indexPath.item])
             return cell
             
