@@ -9,7 +9,7 @@
 import Foundation
 
 struct Offer1 {
-    private (set) public var ImageName : String
+     var ImageName : String
     init(ImageName : String) {
         self.ImageName = ImageName
 

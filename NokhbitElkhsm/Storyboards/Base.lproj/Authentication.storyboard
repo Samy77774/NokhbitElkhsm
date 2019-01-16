@@ -269,9 +269,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lr2-1a-AK8">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Rbf-eq-eGg">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Rbf-eq-eGg">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Umv-Tk-ygi">
                                         <rect key="frame" x="16" y="35" width="343" height="50"/>
@@ -449,11 +448,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="Rbf-eq-eGg" firstAttribute="top" secondItem="lr2-1a-AK8" secondAttribute="top" id="8V0-du-H3l"/>
                                     <constraint firstItem="5MS-Wg-Fo1" firstAttribute="top" secondItem="Umv-Tk-ygi" secondAttribute="bottom" constant="10" id="GTT-gJ-mIe"/>
                                     <constraint firstAttribute="trailing" secondItem="Umv-Tk-ygi" secondAttribute="trailing" constant="16" id="MB9-F9-ul3"/>
+                                    <constraint firstItem="Rbf-eq-eGg" firstAttribute="leading" secondItem="lr2-1a-AK8" secondAttribute="leading" id="NlP-BN-anu"/>
                                     <constraint firstItem="Umv-Tk-ygi" firstAttribute="top" secondItem="lr2-1a-AK8" secondAttribute="top" constant="35" id="Tlu-pl-7kb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rbf-eq-eGg" secondAttribute="bottom" id="Uxa-Cd-EtM"/>
                                     <constraint firstItem="5MS-Wg-Fo1" firstAttribute="leading" secondItem="lr2-1a-AK8" secondAttribute="leading" constant="16" id="azQ-Fg-l3D"/>
                                     <constraint firstAttribute="trailing" secondItem="5MS-Wg-Fo1" secondAttribute="trailing" constant="16" id="hv3-fl-D3M"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rbf-eq-eGg" secondAttribute="trailing" id="lil-QR-HCQ"/>
                                     <constraint firstItem="Umv-Tk-ygi" firstAttribute="leading" secondItem="lr2-1a-AK8" secondAttribute="leading" constant="16" id="zie-2M-JHE"/>
                                 </constraints>
                             </view>
@@ -477,82 +480,103 @@
             <point key="canvasLocation" x="2370" y="125"/>
         </scene>
         <!--Forget Password View Controller-->
-        <scene sceneID="6gm-fd-Ryx">
+        <scene sceneID="WDN-XU-ZgV">
             <objects>
-                <viewController storyboardIdentifier="ForgetPasswordViewController" id="7bm-CW-WgP" customClass="ForgetPasswordViewController" customModule="NokhbitElkhsm" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8GK-ri-nKH">
+                <viewController storyboardIdentifier="ForgetPasswordViewController" id="MPf-If-gzj" customClass="ForgetPasswordViewController" customModule="NokhbitElkhsm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ct9-8D-glZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0SZ-6K-wzb">
-                                <rect key="frame" x="9" y="89" width="343" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-Cv-xMs">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور القديمة" textAlignment="right" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="LqU-X1-EJn">
-                                        <rect key="frame" x="8" y="8" width="327" height="25"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WP7-A8-4WB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0SZ-6K-wzb">
+                                        <rect key="frame" x="16" y="129" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.53414869310000002" green="0.29817301029999999" blue="0.52961063389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
-                                    </textField>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور القديمة" textAlignment="right" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="LqU-X1-EJn">
+                                                <rect key="frame" x="8" y="8" width="327" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.53414869310000002" green="0.29817301029999999" blue="0.52961063389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oG2-Q3-5Gy">
+                                        <rect key="frame" x="16" y="194" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور الجديدة" textAlignment="right" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Lha-hg-MLd">
+                                                <rect key="frame" x="8" y="8" width="327" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.53414869310000002" green="0.29817301029999999" blue="0.52961063389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01S-jc-81H">
+                                        <rect key="frame" x="16" y="263" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="تأكيد كلمة المرور الجديدة" textAlignment="right" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZUs-R6-kLR">
+                                                <rect key="frame" x="8" y="8" width="327" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.53414869310000002" green="0.29817301029999999" blue="0.52961063389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nem-AY-YMF">
+                                        <rect key="frame" x="42" y="354" width="290" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.035486843439999999" green="0.027605885640000001" blue="0.02742985077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="19"/>
+                                        <state key="normal" title="تغيير">
+                                            <color key="titleColor" red="0.8548135161" green="0.65432846550000001" blue="0.18227693440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.043226510289999999" green="0.039297569540000001" blue="0.039198160170000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
-                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WP7-A8-4WB" secondAttribute="bottom" id="DZj-Sr-vFT"/>
+                                    <constraint firstItem="WP7-A8-4WB" firstAttribute="top" secondItem="TXh-Cv-xMs" secondAttribute="top" id="HEx-La-38a"/>
+                                    <constraint firstAttribute="trailing" secondItem="WP7-A8-4WB" secondAttribute="trailing" id="MMc-zf-n6b"/>
+                                    <constraint firstItem="WP7-A8-4WB" firstAttribute="leading" secondItem="TXh-Cv-xMs" secondAttribute="leading" id="sPP-3R-zgD"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oG2-Q3-5Gy">
-                                <rect key="frame" x="9" y="150" width="343" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور الجديدة" textAlignment="right" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Lha-hg-MLd">
-                                        <rect key="frame" x="8" y="8" width="327" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.53414869310000002" green="0.29817301029999999" blue="0.52961063389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01S-jc-81H">
-                                <rect key="frame" x="9" y="211" width="343" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="تأكيد كلمة المرور الجديدة" textAlignment="right" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZUs-R6-kLR">
-                                        <rect key="frame" x="8" y="8" width="327" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.53414869310000002" green="0.29817301029999999" blue="0.52961063389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nem-AY-YMF">
-                                <rect key="frame" x="35" y="333" width="290" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.035486843439999999" green="0.027605885640000001" blue="0.02742985077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="19"/>
-                                <state key="normal" title="تغيير">
-                                    <color key="titleColor" red="0.8548135161" green="0.65432846550000001" blue="0.18227693440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.043226510289999999" green="0.039297569540000001" blue="0.039198160170000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.95678943400000005" green="0.95690399410000004" blue="0.95675045250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="aH1-CK-s9D"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TXh-Cv-xMs" firstAttribute="top" secondItem="6bO-TO-KF8" secondAttribute="top" id="1Cf-3z-Vz5"/>
+                            <constraint firstItem="TXh-Cv-xMs" firstAttribute="leading" secondItem="6bO-TO-KF8" secondAttribute="leading" id="4eX-KD-rWr"/>
+                            <constraint firstItem="6bO-TO-KF8" firstAttribute="bottom" secondItem="TXh-Cv-xMs" secondAttribute="bottom" id="A4u-p0-Ibe"/>
+                            <constraint firstItem="6bO-TO-KF8" firstAttribute="trailing" secondItem="TXh-Cv-xMs" secondAttribute="trailing" id="atr-rs-BNJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6bO-TO-KF8"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qZW-bJ-dXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUm-Id-YUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3329" y="125"/>
+            <point key="canvasLocation" x="3148" y="125"/>
         </scene>
     </scenes>
     <resources>

@@ -17,17 +17,25 @@ class LoginViewController: UIViewController {
     
     @IBAction func Skip(_ sender: Any) {
         let sb = UIStoryboard(name: "Home", bundle: nil)
-        let vc = sb.instantiateInitialViewController()
-        self.presentDetails(viewControllerToPresent: (vc)!)
+        let vc = sb.instantiateViewController(withIdentifier:"SWRevealViewController")
+        self.presentDetails(viewControllerToPresent: (vc))
     }
     
     @IBAction func SkipRegister(_ sender: Any) {
-self.navigationController?.pushViewController(Storyboard.Authentication.instantiate(RegisterViewController.self), animated: true)
+        if let viewController = UIStoryboard(name: "Authentication", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
     }
     
     
     @IBAction func ForgetPassword(_ sender: Any) {
-        self.navigationController?.pushViewController(Storyboard.Authentication.instantiate(ForgetPasswordViewController.self), animated: true)
+        if let viewController = UIStoryboard(name: "Authentication", bundle: nil).instantiateViewController(withIdentifier: "ForgetPasswordViewController") as? ForgetPasswordViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
     }
     
 }

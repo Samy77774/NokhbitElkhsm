@@ -9,48 +9,50 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    @IBOutlet weak var HomeCollection1: UICollectionView!
-    @IBOutlet weak var HomeCollection2: UICollectionView!
-    @IBOutlet weak var HomeCollection3: UICollectionView!
-    @IBOutlet weak var HomeCollection4: UICollectionView!
     
-    let types1 = [(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") )]
-    let types2 = [(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") )]
-    let types3 = [(#imageLiteral(resourceName: "2") , "احصل على 50% من قيمة مشترياتك من خلال الحصول على بطاقة الخصم"),(#imageLiteral(resourceName: "2") , "احصل على 50% من قيمة مشترياتك من خلال الحصول على بطاقة الخصم"),(#imageLiteral(resourceName: "2") , "احصل على 50% من قيمة مشترياتك من خلال الحصول على بطاقة الخصم")]
-     let types4 = [(#imageLiteral(resourceName: "4") ),(#imageLiteral(resourceName: "4") ),(#imageLiteral(resourceName: "4") ),(#imageLiteral(resourceName: "4") )]
-    
-     private (set) public var offers = [Offer1]()
-   private (set) public var offrs = [Offer2]()
-    private (set) public var offr = [Offer3]()
-    private (set) public var offs = [Offer4]()
+    @IBOutlet weak var menuBtn: UIButton!
+    var types1 = [(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") )]
+    var types2 = [(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") )]
+   var types3 = [(#imageLiteral(resourceName: "2") ),(#imageLiteral(resourceName: "2") ),(#imageLiteral(resourceName: "2") )]
+     var types4 = [(#imageLiteral(resourceName: "4") ),(#imageLiteral(resourceName: "4") ),(#imageLiteral(resourceName: "4") ),(#imageLiteral(resourceName: "4") )]
+    var types5 = [("احصل على 50% من قيمة مشترياتك من خلال الحصول على بطاقة الخصم"),("احصل على 50% من قيمة مشترياتك من خلال الحصول على بطاقة الخصم"),("احصل على 50% من قيمة مشترياتك من خلال الحصول على بطاقة الخصم")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        HomeCollection1.delegate = self
-        HomeCollection1.dataSource = self
-        HomeCollection2.delegate = self
-        HomeCollection2.dataSource = self
-        
- HomeCollection1.register(UINib(nibName: "HomeCollectionView1", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionView1")
-        
-         HomeCollection2.register(UINib(nibName: "HomeCollectionView2", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionView2")
-        
-         HomeCollection3.register(UINib(nibName: "HomeCollectionView3", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionView3")
-        
-         HomeCollection4.register(UINib(nibName: "HomeCollectionView4", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionView4")
+        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
     }
+
+    
+    @IBAction func SearchPressed(_ sender: Any) {
+      
+        let sb: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier:"SearchViewController") as! SearchViewController
+       self.navigationController?.pushViewController(vc, animated: true)
+            }
+
+
+
+    
+    
+    
+    
+    
 }
+    
+
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView.tag {
         case 0:
-            return offers.count
+            return types1.count
         case 1:
-            return offrs.count
+            return types2.count
         case 2:
-            return offr.count
+            return types3.count
         case 3:
-            return offs.count
+            return types4.count
         default:
             return 0
         }
@@ -59,31 +61,29 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch collectionView.tag {
         case 0:
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionView1", for: indexPath) as? HomeCollectionView1 else { return UICollectionViewCell() }
-       cell.Collection1Image.image = types1[indexPath.item]
-       //cell.updateViews(offer1: offers[indexPath.item])
-        return cell
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionView1", for: indexPath) as? HomeCollectionView1 else { return UICollectionViewCell() }
+            cell.CollectionImage1.image = types1[indexPath.row]
+            return cell
         case 1:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionView2", for: indexPath) as? HomeCollectionView2 else { return UICollectionViewCell() }
-            cell.Collection2Image.image = types2[indexPath.item]
-           //cell.updateViews(offer2: offrs[indexPath.item])
+            cell.CollectionImage2.image = types2[indexPath.row]
             return cell
-            
         case 2:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionView3", for: indexPath) as? HomeCollectionView3 else { return UICollectionViewCell() }
-            cell.Collection3Image.image = types3[indexPath.item].0
-            cell.DescripImage.text = types3[indexPath.item].1
-           // cell.updateViews(offer2: offrs[indexPath.item])
-            return cell
+           cell.CollectionImage3.image = types3[indexPath.row]
+            cell.CollectionTable.text = types5[indexPath.row]
             
+            return cell
         case 3:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionView4", for: indexPath) as? HomeCollectionView4 else { return UICollectionViewCell() }
-            cell.Collection4Image.image = types4[indexPath.item]
+            cell.CollectionImage4.image = types4[indexPath.row]
             return cell
             
         default:
             return UICollectionViewCell()
-    
         }
     }
+    
 }
+
+

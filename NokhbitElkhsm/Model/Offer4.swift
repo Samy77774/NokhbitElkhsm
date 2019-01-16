@@ -8,7 +8,7 @@
 
 import Foundation
 struct Offer4 {
-    private (set) public var ImageName : String
+     var ImageName : String
     init(ImageName : String) {
         self.ImageName = ImageName
         

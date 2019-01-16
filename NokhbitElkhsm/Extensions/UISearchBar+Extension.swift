@@ -8,7 +8,7 @@
 
 import UIKit
 
-/*extension UISearchBar {
+extension UISearchBar {
  
  private func getViewElement<T>(type: T.Type) -> T? {
  
@@ -67,4 +67,5 @@ import UIKit
  imageView.image = imageView.image?.transform(withNewColor: color)
  }
  }
- */
+}
+
