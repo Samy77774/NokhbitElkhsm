@@ -13,12 +13,27 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "تسجيل الدخول"
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)    }
+      navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+    }
     
     @IBAction func Skip(_ sender: Any) {
-        let sb = UIStoryboard(name: "Home", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier:"SWRevealViewController")
-        self.presentDetails(viewControllerToPresent: (vc))
+        
+//        // go to tabBar
+               let sb = UIStoryboard(name: "Home", bundle: nil)
+                let vc = sb.instantiateViewController(withIdentifier:"TabBarViewController1")
+                if let navigator = navigationController {
+                    navigator.pushViewController(vc, animated: true)
+                }
+        
+        // go to Main Home
+
+//       let sb = UIStoryboard(name: "Home", bundle: nil)
+//        let vc = sb.instantiateViewController(withIdentifier:"SWRevealViewController")
+//        if let navigator = navigationController {
+//            navigator.pushViewController(vc, animated: true)
+//        }
+        
     }
     
     @IBAction func SkipRegister(_ sender: Any) {

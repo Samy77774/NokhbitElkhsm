@@ -15,11 +15,7 @@ public enum Storyboard: String {
         
         // Language
         var detectLang: String!
-        if AppLanguage.currentLanguage().contains("en") {
-            detectLang = "Base"
-        } else if AppLanguage.currentLanguage().contains("ar") {
-            detectLang = "ar"
-        }
+        
         let path = Bundle.main.path(forResource: detectLang , ofType: "lproj")
         let bundd = Bundle.init(path: path!)
         

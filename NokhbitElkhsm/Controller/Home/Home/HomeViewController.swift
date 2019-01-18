@@ -19,9 +19,21 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       self.navigationController?.setNavigationBarHidden(true, animated: false)
+       
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+       self.navigationController?.setNavigationBarHidden(false, animated: true)
+       
     }
 
     

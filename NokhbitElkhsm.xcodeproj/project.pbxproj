@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7967D0C6D40EE294785400B3 /* Pods_NokhbitElkhsm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D75DD34ECCB0E725941CEB7 /* Pods_NokhbitElkhsm.framework */; };
+		D90087BE21F1186600EF5D0A /* Dashboard1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90087BD21F1186600EF5D0A /* Dashboard1ViewController.swift */; };
+		D90087C021F118AC00EF5D0A /* BarCode1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90087BF21F118AC00EF5D0A /* BarCode1ViewController.swift */; };
 		D900EF0C21ECB5ED00FA6E99 /* Offer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF0B21ECB5ED00FA6E99 /* Offer1.swift */; };
 		D900EF1421ECCDB500FA6E99 /* Offer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF1321ECCDB500FA6E99 /* Offer2.swift */; };
 		D900EF2121ECFB6500FA6E99 /* Offer3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF2021ECFB6500FA6E99 /* Offer3.swift */; };
 		D900EF2321ECFB7D00FA6E99 /* Offer4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF2221ECFB7D00FA6E99 /* Offer4.swift */; };
+		D9038EA221F10DE9002C4BEA /* TabBarViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9038EA121F10DE9002C4BEA /* TabBarViewController1.swift */; };
 		D9078A2621EFE77400FA2EDE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9078A2521EFE77300FA2EDE /* SWRevealViewController.m */; };
 		D9078A2921EFE87A00FA2EDE /* SideMenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9078A2821EFE87A00FA2EDE /* SideMenueViewController.swift */; };
+		D9078A2C21EFF53700FA2EDE /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9078A2B21EFF53700FA2EDE /* PrivacyViewController.swift */; };
+		D9078A2F21EFFB5C00FA2EDE /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9078A2E21EFFB5C00FA2EDE /* AboutUsViewController.swift */; };
 		D9DCBC0221EBCA6400D3CC2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCBC0121EBCA6400D3CC2D /* AppDelegate.swift */; };
 		D9DCBC0721EBCA6400D3CC2D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DCBC0521EBCA6400D3CC2D /* Home.storyboard */; };
 		D9DCBC0921EBCA6800D3CC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9DCBC0821EBCA6800D3CC2D /* Assets.xcassets */; };
@@ -55,14 +60,19 @@
 		3A2F1933F87341483744E90A /* Pods-NokhbitElkhsm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokhbitElkhsm.release.xcconfig"; path = "Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm.release.xcconfig"; sourceTree = "<group>"; };
 		4D75DD34ECCB0E725941CEB7 /* Pods_NokhbitElkhsm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NokhbitElkhsm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CD269E91042E48DC67D1A3 /* Pods-NokhbitElkhsm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokhbitElkhsm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm.debug.xcconfig"; sourceTree = "<group>"; };
+		D90087BD21F1186600EF5D0A /* Dashboard1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard1ViewController.swift; sourceTree = "<group>"; };
+		D90087BF21F118AC00EF5D0A /* BarCode1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCode1ViewController.swift; sourceTree = "<group>"; };
 		D900EF0B21ECB5ED00FA6E99 /* Offer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer1.swift; sourceTree = "<group>"; };
 		D900EF1321ECCDB500FA6E99 /* Offer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer2.swift; sourceTree = "<group>"; };
 		D900EF2021ECFB6500FA6E99 /* Offer3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer3.swift; sourceTree = "<group>"; };
 		D900EF2221ECFB7D00FA6E99 /* Offer4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer4.swift; sourceTree = "<group>"; };
+		D9038EA121F10DE9002C4BEA /* TabBarViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController1.swift; sourceTree = "<group>"; };
 		D9078A2321EFE77000FA2EDE /* NokhbitElkhsm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NokhbitElkhsm-Bridging-Header.h"; sourceTree = "<group>"; };
 		D9078A2421EFE77200FA2EDE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D9078A2521EFE77300FA2EDE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		D9078A2821EFE87A00FA2EDE /* SideMenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenueViewController.swift; sourceTree = "<group>"; };
+		D9078A2B21EFF53700FA2EDE /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		D9078A2E21EFFB5C00FA2EDE /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		D9DCBBFE21EBCA6400D3CC2D /* NokhbitElkhsm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NokhbitElkhsm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DCBC0121EBCA6400D3CC2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DCBC0621EBCA6400D3CC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -163,12 +173,36 @@
 			path = HomeCollection4;
 			sourceTree = "<group>";
 		};
+		D9038EA021F10D7B002C4BEA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D9DCBC3F21EBE90200D3CC2D /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		D9078A2721EFE83B00FA2EDE /* SideMenue */ = {
 			isa = PBXGroup;
 			children = (
 				D9078A2821EFE87A00FA2EDE /* SideMenueViewController.swift */,
 			);
 			path = SideMenue;
+			sourceTree = "<group>";
+		};
+		D9078A2A21EFF4A100FA2EDE /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				D9078A2B21EFF53700FA2EDE /* PrivacyViewController.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		D9078A2D21EFF5D300FA2EDE /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				D9078A2E21EFFB5C00FA2EDE /* AboutUsViewController.swift */,
+			);
+			path = AboutUs;
 			sourceTree = "<group>";
 		};
 		D9DCBBF521EBCA6400D3CC2D = {
@@ -232,6 +266,7 @@
 		D9DCBC1F21EBE39D00D3CC2D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D9F407C821EDC4AC00098B14 /* HomeCompany */,
 				D9DCBC3E21EBE8AE00D3CC2D /* Authentication */,
 				D9DCBC3D21EBE8AA00D3CC2D /* Home */,
 			);
@@ -295,10 +330,11 @@
 		D9DCBC3D21EBE8AA00D3CC2D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D9038EA021F10D7B002C4BEA /* Home */,
+				D9078A2D21EFF5D300FA2EDE /* AboutUs */,
+				D9078A2A21EFF4A100FA2EDE /* Privacy */,
 				D9078A2721EFE83B00FA2EDE /* SideMenue */,
 				D9F407D921EE22F300098B14 /* Search */,
-				D9F407C821EDC4AC00098B14 /* HomeCompany */,
-				D9DCBC3F21EBE90200D3CC2D /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -356,6 +392,9 @@
 			isa = PBXGroup;
 			children = (
 				D9F407C921EDC54600098B14 /* HomeCompanyViewController.swift */,
+				D9038EA121F10DE9002C4BEA /* TabBarViewController1.swift */,
+				D90087BD21F1186600EF5D0A /* Dashboard1ViewController.swift */,
+				D90087BF21F118AC00EF5D0A /* BarCode1ViewController.swift */,
 			);
 			path = HomeCompany;
 			sourceTree = "<group>";
@@ -510,10 +549,12 @@
 				D9DCBC2E21EBE68800D3CC2D /* ShowMessage.swift in Sources */,
 				D9DCBC3421EBE72D00D3CC2D /* UIViewControllerExtension.swift in Sources */,
 				D9DCBC7F21EBEBA900D3CC2D /* AppFont.swift in Sources */,
+				D90087BE21F1186600EF5D0A /* Dashboard1ViewController.swift in Sources */,
 				D9DCBC4221EBE93000D3CC2D /* LoginViewController.swift in Sources */,
 				D9DCBC0221EBCA6400D3CC2D /* AppDelegate.swift in Sources */,
 				D900EF2321ECFB7D00FA6E99 /* Offer4.swift in Sources */,
 				D9DCBC2C21EBE65200D3CC2D /* PopViewController.swift in Sources */,
+				D9038EA221F10DE9002C4BEA /* TabBarViewController1.swift in Sources */,
 				D9F407D821EE06C300098B14 /* HomeCollectionView4.swift in Sources */,
 				D9DCBC4021EBE90200D3CC2D /* HomeViewController.swift in Sources */,
 				D9DCBC8221EBED7E00D3CC2D /* AppLanguage.swift in Sources */,
@@ -523,8 +564,10 @@
 				D9DCBC2821EBE59E00D3CC2D /* API.swift in Sources */,
 				D9F407D421EDF26E00098B14 /* HomeCollectionView2.swift in Sources */,
 				D9DCBC8421EBEDB000D3CC2D /* Localizer.swift in Sources */,
+				D90087C021F118AC00EF5D0A /* BarCode1ViewController.swift in Sources */,
 				D9078A2621EFE77400FA2EDE /* SWRevealViewController.m in Sources */,
 				D900EF2121ECFB6500FA6E99 /* Offer3.swift in Sources */,
+				D9078A2C21EFF53700FA2EDE /* PrivacyViewController.swift in Sources */,
 				D9DCBC3A21EBE7C200D3CC2D /* UISearchBar+Extension.swift in Sources */,
 				D9DCBC4421EBE95600D3CC2D /* RegisterViewController.swift in Sources */,
 				D9F407CA21EDC54600098B14 /* HomeCompanyViewController.swift in Sources */,
@@ -536,6 +579,7 @@
 				D9DCBC3621EBE76400D3CC2D /* StringExtension.swift in Sources */,
 				D9DCBC2621EBE52700D3CC2D /* Config.swift in Sources */,
 				D9DCBC3821EBE79900D3CC2D /* UIImageExtension.swift in Sources */,
+				D9078A2F21EFFB5C00FA2EDE /* AboutUsViewController.swift in Sources */,
 				D9F407DB21EE234300098B14 /* SearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
