@@ -76,5 +76,8 @@ extension SideMenueViewController: UITableViewDelegate, UITableViewDataSource {
             break
         }
     }
+    func men(){
+        
+    }
 }
 
