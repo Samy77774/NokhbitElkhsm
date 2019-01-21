@@ -55,20 +55,29 @@ class TabBarViewController1: UITabBarController {
         switch userType {
         case "0":
             let sb = UIStoryboard(name: "Home", bundle: nil)
-            let home = sb.instantiateViewController(withIdentifier:"HomeCompanyViewController")
-            let bar = Storyboard.Home.instantiate(BarCode1ViewController.self)
+            let home = sb.instantiateViewController(withIdentifier:"SWRevealViewController")
             
-            let dash = Storyboard.Home.instantiate(Dashboard1ViewController.self)
+            let bk = UIStoryboard(name: "Home", bundle: nil)
+            let bar = bk.instantiateViewController(withIdentifier:"BarCode1ViewController")
+            
+            
+            
+            let sd = UIStoryboard(name: "Home", bundle: nil)
+            let dash = sd.instantiateViewController(withIdentifier:"Dashboard1ViewController")
             controllers = [home, bar, dash]
         default:
             let sb = UIStoryboard(name: "Home", bundle: nil)
-            let home = sb.instantiateViewController(withIdentifier:"HomeCompanyViewController")
+            let home = sb.instantiateViewController(withIdentifier:"SWRevealViewController")
             
-            let bar = Storyboard.Home.instantiate(BarCode1ViewController.self)
-            let dash = Storyboard.Home.instantiate(Dashboard1ViewController.self)
+            let bk = UIStoryboard(name: "Home", bundle: nil)
+            let bar = bk.instantiateViewController(withIdentifier:"BarCode1ViewController")
+            
+            let sd = UIStoryboard(name: "Home", bundle: nil)
+            let dash = sd.instantiateViewController(withIdentifier:"Dashboard1ViewController")
+           
             controllers = [home, bar, dash]
         }
-        self.viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
+      self.viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
     }
 }
 
