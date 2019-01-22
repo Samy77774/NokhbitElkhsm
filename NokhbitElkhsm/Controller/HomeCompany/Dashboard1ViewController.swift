@@ -9,6 +9,7 @@
 import UIKit
 
 class Dashboard1ViewController: UIViewController {
+    var newProduct = [ "منتج جديد", "منتج جديد","منتج جديد","منتج جديد","منتج جديد","منتج جديد"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,4 +29,18 @@ class Dashboard1ViewController: UIViewController {
     }
 
 
+}
+
+extension Dashboard1ViewController: UITableViewDelegate, UITableViewDataSource {
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 6
+}
+
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "DashBoard1Cell", for: indexPath) as? DashBoard1Cell else { return UITableViewCell() }
+    cell.NewProduct.text = newProduct[indexPath.row]
+//    cell.PriceLable.text = newProduct[indexPath.row]
+//    cell.PercentageRate.text = newProduct[indexPath.row]
+    return cell
+}
 }

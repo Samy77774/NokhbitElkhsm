@@ -19,6 +19,7 @@
 		D9078A2921EFE87A00FA2EDE /* SideMenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9078A2821EFE87A00FA2EDE /* SideMenueViewController.swift */; };
 		D9078A2C21EFF53700FA2EDE /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9078A2B21EFF53700FA2EDE /* PrivacyViewController.swift */; };
 		D9078A2F21EFFB5C00FA2EDE /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9078A2E21EFFB5C00FA2EDE /* AboutUsViewController.swift */; };
+		D9C08B2221F6670300F8D6C4 /* DashBoard1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C08B2121F6670300F8D6C4 /* DashBoard1Cell.swift */; };
 		D9DCBC0221EBCA6400D3CC2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCBC0121EBCA6400D3CC2D /* AppDelegate.swift */; };
 		D9DCBC0721EBCA6400D3CC2D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DCBC0521EBCA6400D3CC2D /* Home.storyboard */; };
 		D9DCBC0921EBCA6800D3CC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9DCBC0821EBCA6800D3CC2D /* Assets.xcassets */; };
@@ -73,6 +74,7 @@
 		D9078A2821EFE87A00FA2EDE /* SideMenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenueViewController.swift; sourceTree = "<group>"; };
 		D9078A2B21EFF53700FA2EDE /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		D9078A2E21EFFB5C00FA2EDE /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		D9C08B2121F6670300F8D6C4 /* DashBoard1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoard1Cell.swift; sourceTree = "<group>"; };
 		D9DCBBFE21EBCA6400D3CC2D /* NokhbitElkhsm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NokhbitElkhsm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DCBC0121EBCA6400D3CC2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DCBC0621EBCA6400D3CC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -205,6 +207,14 @@
 			path = AboutUs;
 			sourceTree = "<group>";
 		};
+		D9C08B2021F666BA00F8D6C4 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D9C08B2121F6670300F8D6C4 /* DashBoard1Cell.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
 		D9DCBBF521EBCA6400D3CC2D = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +286,7 @@
 		D9DCBC2021EBE3B000D3CC2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D9C08B2021F666BA00F8D6C4 /* DashBoard */,
 				D900EF0D21ECC7FA00FA6E99 /* HomeCollection1 */,
 				D900EF0E21ECC82A00FA6E99 /* Homeollection2 */,
 				D900EF1521ECFA0A00FA6E99 /* HomeCollection3 */,
@@ -494,7 +505,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
@@ -505,7 +523,14 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
@@ -547,6 +572,7 @@
 			files = (
 				D900EF0C21ECB5ED00FA6E99 /* Offer1.swift in Sources */,
 				D9DCBC2E21EBE68800D3CC2D /* ShowMessage.swift in Sources */,
+				D9C08B2221F6670300F8D6C4 /* DashBoard1Cell.swift in Sources */,
 				D9DCBC3421EBE72D00D3CC2D /* UIViewControllerExtension.swift in Sources */,
 				D9DCBC7F21EBEBA900D3CC2D /* AppFont.swift in Sources */,
 				D90087BE21F1186600EF5D0A /* Dashboard1ViewController.swift in Sources */,

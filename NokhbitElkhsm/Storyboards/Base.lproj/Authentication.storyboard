@@ -148,6 +148,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" red="0.043226510289999999" green="0.039297569540000001" blue="0.039198160170000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="LoginPressed:" destination="6KX-j8-Xma" eventType="touchUpInside" id="GGu-Vb-oRj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cod-Zi-Whj">
                                         <rect key="frame" x="40" y="379" width="295" height="40"/>

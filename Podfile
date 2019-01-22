@@ -13,5 +13,8 @@ target 'NokhbitElkhsm' do
   pod 'SwiftMessages'
   pod 'IQKeyboardManagerSwift'
   pod 'DropDown'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FacebookShare'
 
 end

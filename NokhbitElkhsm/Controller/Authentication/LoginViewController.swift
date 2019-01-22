@@ -7,9 +7,52 @@
 //
 
 import UIKit
+import FacebookLogin
+import FBSDKLoginKit
+import FacebookCore
+import FBSDKShareKit
+import FBSDKCoreKit
 
 class LoginViewController: UIViewController {
+    
+    
+    ////////Login in face
+   // @IBOutlet weak var Faceinfo: UILabel!
+    @IBAction func LoginPressed(_ sender: UIButton) {
+        let loginManager = LoginManager()
+        loginManager.logIn(readPermissions: [.publicProfile, .email], viewController: self){ result in
+            switch result {
+            case .failed(let error):
+                print(error.localizedDescription)
+            case .cancelled:
+                print("User cancelled login.")
+            case .success(_,_,_):
+                self.getUserInfo { userInfo, error in
+                    if let error = error { print (error.localizedDescription)}
+                    if let userInfo = userInfo, let id = userInfo ["id"], let name = userInfo["name"], let email = userInfo["email"]{
+                       // self.Faceinfo.text = "ID: \(id), name: \(name), email: \(email)"
+                    }
+                    // if let userInfo = userInfo, let pictuerurl = (userInfo ["picture"] as? [String:Any])
+                }
+            }
+ 
+        }
+    }
+    func getUserInfo(completion:@escaping (_ :[String: Any]?, _ :Error?) ->Void ){
+        let request = GraphRequest(graphPath: "me", parameters: ["feilds":"id,name,email,picture"])
+        request.start {response, result in
+            switch result {
+            case.failed (let error):
+                completion (nil, error)
+            case.success(let graphResponse):
+                completion (graphResponse.dictionaryValue,nil)
+                
+            }
+        }
+    }
+    
 
+/////////////////////////////////////////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "تسجيل الدخول"

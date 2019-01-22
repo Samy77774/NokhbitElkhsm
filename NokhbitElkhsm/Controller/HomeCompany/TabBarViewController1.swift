@@ -30,22 +30,20 @@ class TabBarViewController1: UITabBarController {
     }
     
     // Set Tab Bar
-    private func setTabBarItems(item: Int, image: UIImage, imageSelected: UIImage, title:String) {
+    private func setTabBarItems(item: Int, title: String) {
         self.tabBar.items![item].title = title
-        self.tabBar.items![item].image = image.resizeImage(newSize: CGSize(width: 20, height: 20))
-        self.tabBar.items![item].selectedImage = imageSelected.resizeImage(newSize: CGSize(width: 20, height: 20))
     }
     
     private func setTabBar() {
         switch userType {
         case "0":
-            self.setTabBarItems(item: 0, image: #imageLiteral(resourceName: "home-btn"), imageSelected: #imageLiteral(resourceName: "home-btn"), title: "الرئيسية")
-         self.setTabBarItems(item: 1, image: #imageLiteral(resourceName: "barcode-btn"), imageSelected: #imageLiteral(resourceName: "barcode-btn-1"), title:"الباركود")
-         self.setTabBarItems(item: 2, image: #imageLiteral(resourceName: "search-btn-1"), imageSelected: #imageLiteral(resourceName: "search-btn-1"), title: "الداش بورد")
+            self.setTabBarItems(item: 0, title: "الرئيسية")
+         self.setTabBarItems(item: 1,  title: "الباركود")
+         self.setTabBarItems(item: 2,  title: "الداش بورد")
             default:
-                self.setTabBarItems(item: 0, image: #imageLiteral(resourceName: "home-btn"), imageSelected: #imageLiteral(resourceName: "home-btn"), title: "الرئيسية")
-                self.setTabBarItems(item: 1, image: #imageLiteral(resourceName: "barcode-btn"), imageSelected: #imageLiteral(resourceName: "barcode-btn-1"), title:"الباركود")
-                self.setTabBarItems(item: 2, image: #imageLiteral(resourceName: "search-btn-1"), imageSelected: #imageLiteral(resourceName: "search-btn-1"), title: "الداش بورد")
+                self.setTabBarItems(item: 0, title: "الرئيسية")
+                self.setTabBarItems(item: 1,  title: "الباركود")
+                self.setTabBarItems(item: 2,  title: "الداش بورد")
         }
     }
 

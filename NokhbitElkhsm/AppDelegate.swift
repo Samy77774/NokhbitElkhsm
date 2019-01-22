@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import FacebookCore
+import FacebookLogin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
          setApperance()
         return true
+    }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return SDKApplicationDelegate.shared.application(app, open:url, options:options)
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -57,7 +62,7 @@ extension AppDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white, NSAttributedString.Key.font: CairoFont.regular.with(size: 20)]
         
         // Custom Tab Bar Item
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : CairoFont.semiBold.with(size: 14)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : CairoFont.semiBold.with(size: 20)], for: .normal)
         UITabBar.appearance().barTintColor = UIColor.black
     }
    
