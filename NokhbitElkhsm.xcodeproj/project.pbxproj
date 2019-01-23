@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7967D0C6D40EE294785400B3 /* Pods_NokhbitElkhsm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D75DD34ECCB0E725941CEB7 /* Pods_NokhbitElkhsm.framework */; };
+		D900383A21F86A4700774B51 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = D900383921F86A4600774B51 /* credentials.plist */; };
 		D90087BE21F1186600EF5D0A /* Dashboard1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90087BD21F1186600EF5D0A /* Dashboard1ViewController.swift */; };
 		D90087C021F118AC00EF5D0A /* BarCode1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90087BF21F118AC00EF5D0A /* BarCode1ViewController.swift */; };
 		D900EF0C21ECB5ED00FA6E99 /* Offer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF0B21ECB5ED00FA6E99 /* Offer1.swift */; };
@@ -61,6 +62,7 @@
 		3A2F1933F87341483744E90A /* Pods-NokhbitElkhsm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokhbitElkhsm.release.xcconfig"; path = "Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm.release.xcconfig"; sourceTree = "<group>"; };
 		4D75DD34ECCB0E725941CEB7 /* Pods_NokhbitElkhsm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NokhbitElkhsm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CD269E91042E48DC67D1A3 /* Pods-NokhbitElkhsm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokhbitElkhsm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm.debug.xcconfig"; sourceTree = "<group>"; };
+		D900383921F86A4600774B51 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		D90087BD21F1186600EF5D0A /* Dashboard1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard1ViewController.swift; sourceTree = "<group>"; };
 		D90087BF21F118AC00EF5D0A /* BarCode1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCode1ViewController.swift; sourceTree = "<group>"; };
 		D900EF0B21ECB5ED00FA6E99 /* Offer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer1.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			children = (
 				D9078A2421EFE77200FA2EDE /* SWRevealViewController.h */,
 				D9078A2521EFE77300FA2EDE /* SWRevealViewController.m */,
+				D900383921F86A4600774B51 /* credentials.plist */,
 				D9DCBC0821EBCA6800D3CC2D /* Assets.xcassets */,
 				D9DCBC0A21EBCA6800D3CC2D /* LaunchScreen.storyboard */,
 				D9DCBC0D21EBCA6800D3CC2D /* Info.plist */,
@@ -430,6 +433,7 @@
 				D9DCBBFB21EBCA6400D3CC2D /* Frameworks */,
 				D9DCBBFC21EBCA6400D3CC2D /* Resources */,
 				BBA910FB6CDA299EAAC50B88 /* [CP] Embed Pods Frameworks */,
+				D584F420A96BD7F59F691E31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -484,6 +488,7 @@
 				D9DCBC7E21EBEBA900D3CC2D /* Cairo-Bold.ttf in Resources */,
 				D9DCBC7C21EBEBA900D3CC2D /* Cairo-Light.ttf in Resources */,
 				D9DCBC8721EBEED000D3CC2D /* Authentication.storyboard in Resources */,
+				D900383A21F86A4700774B51 /* credentials.plist in Resources */,
 				D9DCBC7D21EBEBA900D3CC2D /* Cairo-Black.ttf in Resources */,
 				D9DCBC0921EBCA6800D3CC2D /* Assets.xcassets in Resources */,
 				D9DCBC7B21EBEBA900D3CC2D /* Cairo-Regular.ttf in Resources */,
@@ -513,6 +518,8 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
@@ -531,6 +538,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
@@ -539,6 +548,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D584F420A96BD7F59F691E31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7AC6806767F754A147E50DE /* [CP] Check Pods Manifest.lock */ = {

@@ -12,9 +12,11 @@ import FBSDKLoginKit
 import FacebookCore
 import FBSDKShareKit
 import FBSDKCoreKit
+import GoogleSignIn
 
-class LoginViewController: UIViewController {
-    
+class LoginViewController: UIViewController, GIDSignInUIDelegate,GIDSignInDelegate {
+    //@IBOutlet weak var labGoogleinfo: UILabel!
+    @IBOutlet weak var GoogleSignInPressed: UIButton!
     
     ////////Login in face
    // @IBOutlet weak var Faceinfo: UILabel!
@@ -38,6 +40,9 @@ class LoginViewController: UIViewController {
  
         }
     }
+    
+    /////Login in Google///////////////////////////////////////////////////////////////////////////////
+    
     func getUserInfo(completion:@escaping (_ :[String: Any]?, _ :Error?) ->Void ){
         let request = GraphRequest(graphPath: "me", parameters: ["feilds":"id,name,email,picture"])
         request.start {response, result in
@@ -51,12 +56,38 @@ class LoginViewController: UIViewController {
         }
     }
     
-
-/////////////////////////////////////////////////////////////////////////////
+    @objc func signInGoogle (_ sender: UIButton){
+        if GoogleSignInPressed.title(for: .normal) == "Sign Out" {
+            GIDSignIn.sharedInstance()?.signOut()
+           // labGoogleinfo.text = ""
+            GoogleSignInPressed.setTitle("جوجل بلس", for: .normal)
+            
+        } else {
+            GIDSignIn.sharedInstance()?.delegate = self
+            GIDSignIn.sharedInstance()?.uiDelegate = self
+            GIDSignIn.sharedInstance()?.signIn()
+            
+        }
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        if let error = error {
+            print("We have an error == \(error.localizedDescription)")
+        } else {
+            if let gmailUser = user {
+                //labGoogleinfo.text = "You are sign in using id \(gmailUser.profile.email!)"
+                GoogleSignInPressed.setTitle("Sign Out", for: .normal)
+            }
+            
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "تسجيل الدخول"
       navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        GoogleSignInPressed.addTarget(self, action: #selector(signInGoogle(_:)), for: .touchUpInside)
         
     }
     

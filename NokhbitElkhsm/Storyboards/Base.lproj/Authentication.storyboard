@@ -238,6 +238,9 @@
                         <viewLayoutGuide key="safeArea" id="OSf-XS-aLJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="qzv-fZ-8dv"/>
+                    <connections>
+                        <outlet property="GoogleSignInPressed" destination="u2k-pB-sy3" id="v4h-nq-s4n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o25-Nc-0BO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
