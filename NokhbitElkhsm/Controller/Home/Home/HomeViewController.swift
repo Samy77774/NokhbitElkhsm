@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var menuBtn: UIButton!
+    @IBOutlet weak var ScrollView: UIScrollView!
     var types1 = [(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") ),(#imageLiteral(resourceName: "1") )]
     var types2 = [(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") ),(#imageLiteral(resourceName: "5") )]
    var types3 = [(#imageLiteral(resourceName: "2") ),(#imageLiteral(resourceName: "2") ),(#imageLiteral(resourceName: "2") )]
@@ -19,41 +19,59 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        CustomNavigation()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        ScrollView.showsHorizontalScrollIndicator = false//to disable HorizontalScrollIndicator
+        ScrollView.showsVerticalScrollIndicator = false
         
-        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-       self.navigationController?.setNavigationBarHidden(true, animated: false)
-       
-    }
-
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-       self.navigationController?.setNavigationBarHidden(false, animated: true)
-       
-    }
-
     
-    @IBAction func SearchPressed(_ sender: Any) {
-      
-        let sb: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier:"SearchViewController") as! SearchViewController
-       self.navigationController?.pushViewController(vc, animated: true)
-            }
-
-
-
-    
-    
-    
-    
+    //MarK:- Custom Navigation
+func CustomNavigation (){
+    let imageView = UIImageView(image: UIImage(named: "icon"))
+    let item = UIBarButtonItem(customView: imageView)
+    self.navigationItem.rightBarButtonItem = item
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    let homeBtn: UIButton = UIButton(type: UIButton.ButtonType.custom)
+    homeBtn.setImage(UIImage(named: "home-btn"), for: [])
+    homeBtn.addTarget(self, action: #selector(homeAction), for: UIControl.Event.touchUpInside)
+    homeBtn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+    let homeButton = UIBarButtonItem(customView: homeBtn)
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+    let backBtn: UIButton = UIButton(type: UIButton.ButtonType.custom)
+    backBtn.setImage(UIImage(named: "search-btn"), for: [])
+    backBtn.addTarget(self, action: #selector(backAction), for: UIControl.Event.touchUpInside)
+    backBtn.frame = CGRect(x: -30, y: 0, width: 30, height: 30)
+    let backButton = UIBarButtonItem(customView: backBtn)
+    //////////////////////////////////////////////////////////////////////////////////////////////////////
+    let Menu: UIButton = UIButton(type: UIButton.ButtonType.custom)
+    Menu.setImage(UIImage(named: "side-nav-btn"), for: [])
+    Menu.addTarget(self, action: #selector(SideMenu), for: UIControl.Event.touchUpInside)
+    Menu.frame = CGRect(x: -50, y: 0, width: 30, height: 30)
+    let MenueButton = UIBarButtonItem(customView: Menu)
+    self.navigationItem.setLeftBarButtonItems([MenueButton,homeButton,backButton], animated: true)
     
 }
     
+    @objc func homeAction(){
+        let sb: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier:"HomeViewController") as! HomeViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @objc func backAction(){
+        let sb: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier:"SearchViewController") as! SearchViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @objc func SideMenu(){
+        print("gooooo")
+    }
+    
+}
 
+
+
+//MarK:- making Custom Collection
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView.tag {

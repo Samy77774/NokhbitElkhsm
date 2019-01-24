@@ -18,7 +18,16 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate,GIDSignInDelega
     //@IBOutlet weak var labGoogleinfo: UILabel!
     @IBOutlet weak var GoogleSignInPressed: UIButton!
     
-    ////////Login in face
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "تسجيل الدخول"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        GoogleSignInPressed.addTarget(self, action: #selector(signInGoogle(_:)), for: .touchUpInside)
+        
+    }
+    
+    
+    ///Mark:- Login in face///////////////////////////////////////////////////////////////////
    // @IBOutlet weak var Faceinfo: UILabel!
     @IBAction func LoginPressed(_ sender: UIButton) {
         let loginManager = LoginManager()
@@ -41,7 +50,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate,GIDSignInDelega
         }
     }
     
-    /////Login in Google///////////////////////////////////////////////////////////////////////////////
+    /////Mark:- Login in Google////////////////////////////////////////////////////////////////
     
     func getUserInfo(completion:@escaping (_ :[String: Any]?, _ :Error?) ->Void ){
         let request = GraphRequest(graphPath: "me", parameters: ["feilds":"id,name,email,picture"])
@@ -82,14 +91,8 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate,GIDSignInDelega
             
         }
     }
-    ////////////////////////////////////////////////////////////////////////////////////////////////
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "تسجيل الدخول"
-      navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        GoogleSignInPressed.addTarget(self, action: #selector(signInGoogle(_:)), for: .touchUpInside)
-        
-    }
+   
+    
     
     @IBAction func Skip(_ sender: Any) {
         
@@ -106,6 +109,12 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate,GIDSignInDelega
 //        let vc = sb.instantiateViewController(withIdentifier:"SWRevealViewController")
 //        if let navigator = navigationController {
 //            navigator.pushViewController(vc, animated: true)
+//        }
+        
+//        if let viewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
+//            if let navigator = navigationController {
+//                navigator.pushViewController(viewController, animated: true)
+//            }
 //        }
         
     }

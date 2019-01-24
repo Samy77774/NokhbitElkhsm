@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7967D0C6D40EE294785400B3 /* Pods_NokhbitElkhsm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D75DD34ECCB0E725941CEB7 /* Pods_NokhbitElkhsm.framework */; };
 		D900383A21F86A4700774B51 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = D900383921F86A4600774B51 /* credentials.plist */; };
+		D900385A21F8A27800774B51 /* SideMenueBarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900385921F8A27800774B51 /* SideMenueBarCode.swift */; };
 		D90087BE21F1186600EF5D0A /* Dashboard1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90087BD21F1186600EF5D0A /* Dashboard1ViewController.swift */; };
 		D90087C021F118AC00EF5D0A /* BarCode1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90087BF21F118AC00EF5D0A /* BarCode1ViewController.swift */; };
 		D900EF0C21ECB5ED00FA6E99 /* Offer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900EF0B21ECB5ED00FA6E99 /* Offer1.swift */; };
@@ -63,6 +64,7 @@
 		4D75DD34ECCB0E725941CEB7 /* Pods_NokhbitElkhsm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NokhbitElkhsm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CD269E91042E48DC67D1A3 /* Pods-NokhbitElkhsm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokhbitElkhsm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokhbitElkhsm/Pods-NokhbitElkhsm.debug.xcconfig"; sourceTree = "<group>"; };
 		D900383921F86A4600774B51 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		D900385921F8A27800774B51 /* SideMenueBarCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenueBarCode.swift; sourceTree = "<group>"; };
 		D90087BD21F1186600EF5D0A /* Dashboard1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard1ViewController.swift; sourceTree = "<group>"; };
 		D90087BF21F118AC00EF5D0A /* BarCode1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCode1ViewController.swift; sourceTree = "<group>"; };
 		D900EF0B21ECB5ED00FA6E99 /* Offer1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer1.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				D9078A2821EFE87A00FA2EDE /* SideMenueViewController.swift */,
+				D900385921F8A27800774B51 /* SideMenueBarCode.swift */,
 			);
 			path = SideMenue;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				D9078A2621EFE77400FA2EDE /* SWRevealViewController.m in Sources */,
 				D900EF2121ECFB6500FA6E99 /* Offer3.swift in Sources */,
 				D9078A2C21EFF53700FA2EDE /* PrivacyViewController.swift in Sources */,
+				D900385A21F8A27800774B51 /* SideMenueBarCode.swift in Sources */,
 				D9DCBC3A21EBE7C200D3CC2D /* UISearchBar+Extension.swift in Sources */,
 				D9DCBC4421EBE95600D3CC2D /* RegisterViewController.swift in Sources */,
 				D9F407CA21EDC54600098B14 /* HomeCompanyViewController.swift in Sources */,

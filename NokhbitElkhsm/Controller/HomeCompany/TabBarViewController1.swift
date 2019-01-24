@@ -52,25 +52,26 @@ class TabBarViewController1: UITabBarController {
         var controllers: [UIViewController]!
         switch userType {
         case "0":
+            //case Home
             let sb = UIStoryboard(name: "Home", bundle: nil)
-            let home = sb.instantiateViewController(withIdentifier:"SWRevealViewController")
-            
+            let home = sb.instantiateViewController(withIdentifier:"HomeViewController")
+            // Case Barcode
             let bk = UIStoryboard(name: "Home", bundle: nil)
             let bar = bk.instantiateViewController(withIdentifier:"BarCode1ViewController")
-            
-            
-            
+            //Case Dashboard
             let sd = UIStoryboard(name: "Home", bundle: nil)
             let dash = sd.instantiateViewController(withIdentifier:"Dashboard1ViewController")
+            
             controllers = [home, bar, dash]
         default:
+             //case Home
             let sb = UIStoryboard(name: "Home", bundle: nil)
-            let home = sb.instantiateViewController(withIdentifier:"SWRevealViewController")
-            
+            let home = sb.instantiateViewController(withIdentifier:"HomeViewController")
+             // Case Barcode
             let bk = UIStoryboard(name: "Home", bundle: nil)
             let bar = bk.instantiateViewController(withIdentifier:"BarCode1ViewController")
-            
-            let sd = UIStoryboard(name: "Home", bundle: nil)
+            //Case Dashboard
+           let sd = UIStoryboard(name: "Home", bundle: nil)
             let dash = sd.instantiateViewController(withIdentifier:"Dashboard1ViewController")
            
             controllers = [home, bar, dash]
