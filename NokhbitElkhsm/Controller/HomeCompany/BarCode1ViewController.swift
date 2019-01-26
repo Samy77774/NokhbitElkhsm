@@ -77,9 +77,11 @@ class BarCode1ViewController: UIViewController,AVCaptureMetadataOutputObjectsDel
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @objc func backAction(){
-        let sb: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier:"SearchViewController") as! SearchViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.show(Storyboard.Home.instantiate(SearchViewController.self), sender: nil)
+
+//        let sb: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+//        let vc = sb.instantiateViewController(withIdentifier:"SearchViewController") as! SearchViewController
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     @objc func SideMenu(){
         print("gooooo")

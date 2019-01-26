@@ -10,7 +10,6 @@ import UIKit
 import FacebookCore
 import FacebookLogin
 import GoogleSignIn
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

@@ -17,5 +17,6 @@ pod 'FacebookCore'
 pod 'FacebookLogin'
 pod 'FacebookShare'
 pod 'GoogleSignIn'
+pod 'SlideMenuControllerSwift'
 
 end
